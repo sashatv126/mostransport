@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="MvpTableView" customModuleProvider="target">
+            <connections>
+                <outlet property="search" destination="zHP-uX-bbd" id="382-Af-Lyt"/>
+                <outlet property="tableView" destination="eWL-ea-8P2" id="zXv-hf-tXT"/>
+                <outlet property="view" destination="iN0-l3-epB" id="YBi-Bp-xK1"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="eWL-ea-8P2">
+                    <rect key="frame" x="0.0" y="91" width="414" height="805"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="separatorColor" systemColor="systemGray2Color"/>
+                    <color key="sectionIndexBackgroundColor" red="0.39604109529999998" green="0.39610227939999998" blue="0.39602768420000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </tableView>
+                <searchBar contentMode="scaleToFill" barStyle="black" placeholder="Найди свою остановку" translatesAutoresizingMaskIntoConstraints="NO" id="zHP-uX-bbd">
+                    <rect key="frame" x="0.0" y="58" width="414" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="mHV-Li-He2"/>
+                    </constraints>
+                    <offsetWrapper key="searchTextPositionAdjustment" horizontal="13" vertical="0.0"/>
+                    <textInputTraits key="textInputTraits" textContentType="additional-name"/>
+                    <scopeButtonTitles>
+                        <string>Title</string>
+                        <string>Title</string>
+                    </scopeButtonTitles>
+                </searchBar>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.14509803921568626" green="0.16078431372549018" blue="0.15294117647058825" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="eWL-ea-8P2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="91" id="Aee-6p-nk5"/>
+                <constraint firstItem="zHP-uX-bbd" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="E0z-Xd-AxC"/>
+                <constraint firstItem="eWL-ea-8P2" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="TZC-SD-tO6"/>
+                <constraint firstItem="eWL-ea-8P2" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="U6P-MX-OFX"/>
+                <constraint firstAttribute="bottom" secondItem="eWL-ea-8P2" secondAttribute="bottom" id="kWP-Gt-j2L"/>
+                <constraint firstItem="zHP-uX-bbd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="wgr-kq-lby"/>
+                <constraint firstItem="zHP-uX-bbd" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="14" id="wvM-su-22M"/>
+            </constraints>
+            <point key="canvasLocation" x="140.57971014492756" y="93.75"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

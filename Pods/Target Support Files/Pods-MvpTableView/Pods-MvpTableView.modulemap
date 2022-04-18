@@ -1,0 +1,6 @@
+framework module Pods_MvpTableView {
+  umbrella header "Pods-MvpTableView-umbrella.h"
+
+  export *
+  module * { export * }
+}
